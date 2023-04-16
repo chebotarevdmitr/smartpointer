@@ -9,6 +9,8 @@ int main()
 	//cout << unPtr1 << endl;
 	//cout << *unPtr1 << endl;
 	unique_ptr<int>unPtr2 = move(unPtr1);
+	cout << *unPtr2 << endl;
+
 
 	system("pause>0");
 	return 0;
