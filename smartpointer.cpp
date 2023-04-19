@@ -24,9 +24,9 @@ int main()
 	unique_ptr<int>unPtr2 = move(unPtr1);
 	cout << *unPtr2 << endl;
 	*/
-	 
-	unique_ptr<MyClass>unPtr1 = make_unique<MyClass>();
-
+	{
+		unique_ptr<MyClass>unPtr1 = make_unique<MyClass>();
+	}
 
 	system("pause>0");
 	return 0;
