@@ -3,6 +3,16 @@
 
 using namespace std;
 
+class MyClass
+{
+public:
+	MyClass() {
+		cout << "constructor invoked" << endl;
+	}
+
+
+};
+
 int main()
 {
 	unique_ptr<int>unPtr1 = make_unique<int>(25);
@@ -11,7 +21,7 @@ int main()
 	unique_ptr<int>unPtr2 = move(unPtr1);
 	cout << *unPtr2 << endl;
 
-
+	 
 	system("pause>0");
 	return 0;
 }
