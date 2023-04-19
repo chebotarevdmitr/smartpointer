@@ -9,7 +9,9 @@ public:
 	MyClass() {
 		cout << "constructor invoked" << endl;
 	}
-
+	~MyClass() {
+		cout << "destructor invoked" << endl;
+	}
 
 };
 
