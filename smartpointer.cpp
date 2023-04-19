@@ -17,6 +17,7 @@ public:
 
 int main()
 {
+
 	/*unique_ptr<int>unPtr1 = make_unique<int>(25);
 	//1comit cout << unPtr1 << endl;
 	//1comit cout << *unPtr1 << endl;
@@ -24,6 +25,9 @@ int main()
 	cout << *unPtr2 << endl;
 	*/
 	 
+	unique_ptr<MyClass>unPtr1 = make_unique<MyClass>();
+
+
 	system("pause>0");
 	return 0;
 }
