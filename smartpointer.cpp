@@ -24,6 +24,8 @@ int main()
 	unique_ptr<int>unPtr2 = move(unPtr1);
 	cout << *unPtr2 << endl;
 	*/
+
+	/*
 	{
 		shared_ptr<MyClass>shPtr1 = make_shared <MyClass>();
 		cout << "Shared count:" << shPtr1.use_count() << endl;
@@ -34,6 +36,13 @@ int main()
 		}
 		cout << "Shared count:" << shPtr1.use_count() << endl;
 	}
+	*/
+
+	weak_ptr<int>wePtr1;
+
+
+	 
+
 	system("pause>0");
 	return 0;
 }
