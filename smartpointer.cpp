@@ -39,7 +39,10 @@ int main()
 	*/
 
 	weak_ptr<int>wePtr1;
+	{
+		shared_ptr<int>shPtr1 = make_shared<int>(25);
 
+	}
 
 	 
 
