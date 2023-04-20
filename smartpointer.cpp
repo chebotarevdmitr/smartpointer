@@ -24,16 +24,16 @@ int main()
 	unique_ptr<int>unPtr2 = move(unPtr1);
 	cout << *unPtr2 << endl;
 	*/
-
-	shared_ptr<MyClass>shPtr1 = make_shared <MyClass>();
-	cout << "Shared count:" << shPtr1.use_count() << endl;
-	// та же ячейка памяти shPtr1
 	{
-		shared_ptr<MyClass>shPtr2 = shPtr1;
+		shared_ptr<MyClass>shPtr1 = make_shared <MyClass>();
+		cout << "Shared count:" << shPtr1.use_count() << endl;
+		// та же ячейка памяти shPtr1
+		{
+			shared_ptr<MyClass>shPtr2 = shPtr1;
+			cout << "Shared count:" << shPtr1.use_count() << endl;
+		}
 		cout << "Shared count:" << shPtr1.use_count() << endl;
 	}
-	cout << "Shared count:" << shPtr1.use_count() << endl;
-
 	system("pause>0");
 	return 0;
 }
