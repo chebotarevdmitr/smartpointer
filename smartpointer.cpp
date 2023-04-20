@@ -27,8 +27,9 @@ int main()
 
 	shared_ptr<MyClass>shPtr1 = make_shared <MyClass>();
 	cout << "Shared count:" << shPtr1.use_count() << endl;
-	
-
+	// та же ячейка памяти shPtr1
+	shared_ptr<MyClass>shPtr2 = shPtr1;
+	cout << "Shared count:" << shPtr1.use_count() << endl;
 	system("pause>0");
 	return 0;
 }
